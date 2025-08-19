@@ -74,7 +74,7 @@ export default function Header() {
             {/* Overlay */}
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 0.6 }}
+              animate={{ opacity: 0.5 }}
               exit={{ opacity: 0 }}
               className="fixed inset-0 z-40 bg-black"
               onClick={() => setOpen(false)}
@@ -86,11 +86,11 @@ export default function Header() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'tween', duration: 0.3 }}
-              className="fixed right-0 top-0 z-50 h-full w-72 bg-gray-900 shadow-xl flex flex-col"
+              className="fixed right-0 top-0 z-50 h-full w-72 bg-white shadow-xl flex flex-col"
             >
-              <div className="flex items-center justify-between p-4 border-b border-gray-700">
-                <span className="text-lg font-semibold text-white">Menu</span>
-                <button onClick={() => setOpen(false)} aria-label="Close Menu" className="text-white">
+              <div className="flex items-center justify-between p-4 border-b">
+                <span className="text-lg font-semibold">Menu</span>
+                <button onClick={() => setOpen(false)} aria-label="Close Menu">
                   ❌
                 </button>
               </div>
@@ -99,14 +99,14 @@ export default function Header() {
                   <button
                     key={n.href}
                     onClick={() => scrollTo(n.href)}
-                    className="text-left rounded-lg px-3 py-3 text-base font-medium text-white hover:bg-gray-800"
+                    className="text-left rounded-lg px-3 py-3 text-base font-medium text-gray-800 hover:bg-gray-100"
                   >
                     {n.label}
                   </button>
                 ))}
                 <button
                   onClick={() => scrollTo('discover')}
-                  className="mt-4 rounded-lg bg-white px-4 py-3 text-center text-sm font-semibold text-black hover:bg-gray-200"
+                  className="mt-4 rounded-lg bg-black px-4 py-3 text-center text-sm font-semibold text-white hover:bg-gray-900"
                 >
                   Start 2-Week Discover
                 </button>
