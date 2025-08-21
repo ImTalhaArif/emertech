@@ -1,38 +1,43 @@
 "use client";
+
 import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-[#0A1F44] text-white shadow-md">
+    <header className="bg-blue-900 text-white shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo / Brand */}
-        <Link href="/" className="text-2xl font-bold tracking-wide">
-          EP Consulting
+        {/* Logo */}
+        <Link href="/" className="text-2xl font-bold tracking-wide no-underline">
+          DeployAI
         </Link>
 
         {/* Navigation */}
-        <nav className="hidden md:flex space-x-8">
-          <Link href="#about" className="hover:text-gray-300 transition">
+        <nav className="space-x-6 hidden md:flex">
+          <Link
+            href="#about"
+            className="no-underline hover:text-blue-300 transition-colors"
+          >
             About
           </Link>
-          <Link href="#expertise" className="hover:text-gray-300 transition">
+          <Link
+            href="#expertise"
+            className="no-underline hover:text-blue-300 transition-colors"
+          >
             Expertise
           </Link>
-          <Link href="#services" className="hover:text-gray-300 transition">
-            Services
+          <Link
+            href="#framework"
+            className="no-underline hover:text-blue-300 transition-colors"
+          >
+            READY Framework
           </Link>
-          <Link href="#contact" className="hover:text-gray-300 transition">
-            Contact
+          <Link
+            href="#contact"
+            className="bg-white text-blue-900 font-semibold px-4 py-2 rounded-xl shadow hover:bg-blue-100 transition-colors no-underline"
+          >
+            Contact Us
           </Link>
         </nav>
-
-        {/* CTA */}
-        <Link
-          href="#discover"
-          className="ml-4 bg-white text-[#0A1F44] px-4 py-2 rounded-lg shadow hover:bg-gray-100 transition"
-        >
-          Start 2-Week Discover
-        </Link>
       </div>
     </header>
   );
