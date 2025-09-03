@@ -203,7 +203,7 @@ export default function HomePage() {
       >
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <img
-            src="/about.jpg"
+            src="/about-team.jpg"
             alt="About Emertech"
             className="rounded-2xl shadow-lg"
           />
@@ -241,7 +241,7 @@ export default function HomePage() {
             </p>
           </div>
           <img
-            src="/results.jpg"
+            src="/ready-results.jpg"
             alt="Business Results"
             className="rounded-2xl shadow-lg"
           />
