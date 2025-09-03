@@ -63,7 +63,7 @@ className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 foc
           aria-label="Open menu"
           aria-expanded={open}
           onClick={() => setOpen(true)}
-          className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/20 hover:scale-105 transition-transform duration-200"
+          className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg hover:scale-105 transition-transform duration-200"
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
             <path d="M4 7h16M4 12h16M4 17h16" stroke="white" strokeWidth="2" strokeLinecap="round" />
@@ -89,7 +89,7 @@ className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 foc
         />
 
         <motion.aside
-          className="fixed right-0 top-0 bottom-0 z-[70] w-[84%] max-w-sm bg-[#0A1F44] text-white shadow-2xl flex flex-col"
+          className="fixed right-0 top-0 bottom-0 z-[70] w-[84%] max-w-sm backdrop-blur-lg bg-[#0A1F44]/80 text-white shadow-2xl flex flex-col"
           initial={{ x: '100%' }}
           animate={{ x: 0 }}
           exit={{ x: '100%' }}
@@ -102,7 +102,7 @@ className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 foc
             <button
               aria-label="Close menu"
               onClick={() => setOpen(false)}
-              className="h-9 w-9 rounded-lg border border-white/20 flex items-center justify-center hover:scale-105 transition-transform duration-200"
+              className="h-9 w-9 rounded-lg flex items-center justify-center hover:scale-105 transition-transform duration-200"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
                 <path d="M6 6l12 12M18 6L6 18" stroke="white" strokeWidth="2" strokeLinecap="round" />
