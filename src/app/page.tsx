@@ -1,5 +1,7 @@
 "use client";
-import { useState, useEffect } from "react"; import { motion, AnimatePresence } from "framer-motion"; import { ChevronLeft, ChevronRight } from "lucide-react"; import Header from "@/components/Header"; import Footer from "@/components/Footer";
+import { useState, useEffect } from "react"; import { motion, AnimatePresence } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Header from "./components/Header"; import Footer from "./components/Footer";
 
 export default function HomePage() { const slides = [ { title: "Innovating the Future", subtitle: "We craft digital solutions with precision and creativity.", bg: "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500", }, { title: "AI & Automation", subtitle: "Empowering businesses with next-gen AI solutions.", bg: "bg-gradient-to-r from-blue-600 via-cyan-500 to-green-400", }, { title: "Web & App Development", subtitle: "Building seamless, modern, and scalable experiences.", bg: "bg-gradient-to-r from-orange-500 via-red-500 to-rose-500", }, ];
 
